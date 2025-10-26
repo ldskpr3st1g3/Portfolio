@@ -4,4 +4,4 @@
 
 ## Links
 
-- [Public page on GitHub Pages] ( https://ldskpr3st1g3.github.io/Portfolio/)
+- [Public page on GitHub Pages](https://ldskpr3st1g3.github.io/Portfolio/)
