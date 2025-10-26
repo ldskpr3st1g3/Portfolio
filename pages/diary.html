@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Учебный дневник - Портфолио Трифонова Григория</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar navbar-dark bg-dark sticky-top">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="../index.html"
+          ><i class="bi bi-code-slash me-2"></i>Трифонов Григорий</a
+        >
+        <ul class="navbar-nav flex-row ms-auto">
+          <li class="nav-item me-3">
+            <a class="nav-link" href="../index.html"
+              ><i class="bi bi-house me-1"></i>Главная</a
+            >
+          </li>
+          <li class="nav-item me-3">
+            <a class="nav-link" href="projects.html"
+              ><i class="bi bi-trophy me-1"></i>Мои работы</a
+            >
+          </li>
+          <li class="nav-item me-3">
+            <a class="nav-link active" href="diary.html"
+              ><i class="bi bi-journal me-1"></i>Дневник</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contacts.html"
+              ><i class="bi bi-telephone me-1"></i>Контакты</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Хлебные крошки -->
+    <div class="container mt-3">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="../index.html">Главная</a></li>
+          <li class="breadcrumb-item active" aria-current="page">
+            Учебный дневник
+          </li>
+        </ol>
+      </nav>
+    </div>
+
+    <main class="container my-4">
+      <h1 class="text-center mb-4">Мой учебный прогресс</h1>
+
+      <div class="card mb-4">
+        <div class="card-body">
+          <ul class="list-group">
+            <li class="list-group-item d-flex justify-content-between">
+              15 дек — Верстка макета сайта <span class="text-success">✓</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+              10 дек — Основы JavaScript <span class="text-success">✓</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+              05 дек — Работа с формами
+              <span class="text-warning">В процессе</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+              01 дек — Адаптивный дизайн
+              <span class="text-warning">В процессе</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <h3 class="mb-3">Текущие курсы</h3>
+      <div class="mb-3">
+        <label class="form-label fw-semibold">Веб-разработка</label>
+        <div class="progress">
+          <div class="progress-bar" style="width: 90%">90%</div>
+        </div>
+      </div>
+      <div class="mb-3">
+        <label class="form-label fw-semibold">JavaScript</label>
+        <div class="progress">
+          <div class="progress-bar bg-info" style="width: 70%">70%</div>
+        </div>
+      </div>
+      <div class="mb-3">
+        <label class="form-label fw-semibold">React</label>
+        <div class="progress">
+          <div class="progress-bar bg-success" style="width: 50%">50%</div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-4">
+      <p class="mb-0">&copy; 2025 Портфолио Трифонова Григория.</p>
+    </footer>
+  </body>
+</html>
