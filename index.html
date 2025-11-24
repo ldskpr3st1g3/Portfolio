@@ -5,42 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Главная - Портфолио Трифонова Григория</title>
     <link rel="icon" href="favicon.ico" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-
-icons@1.11.1/font/bootstrap-icons.css"
-    />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!-- Header -->
-    <header class="hero-section text-white py-5">
+    <header class="hero-section">
       <div class="container">
-        <div class="row align-items-center">
-          <div class="col-md-4 text-center">
+        <div class="hero-content">
+          <div class="hero-image">
             <img
               src="images/rickroll.jpg"
               alt="Фото студента"
-              class="img-fluid rounded-circle"
-              style="width: 200px; height: 200px; object-fit: cover"
+              class="profile-image"
             />
           </div>
-          <div class="col-md-8">
-            <h1 class="display-5 fw-bold">Привет! Я Трифонов Григорий</h1>
-            <p class="lead">Студент группы ЭФБО-06-24</p>
-            <p class="mb-4">
-              Увлекаюсь веб-разработкой и созданием современных интерфейсов
+          <div class="hero-text">
+            <h1>Привет! Я Трифонов Григорий</h1>
+            <p class="subtitle">Студент группы ЭФБО-06-24</p>
+            <p class="description">
+              Увлекаюсь изучением C++ и спортивным программированием.
             </p>
             <a
               href="assets/Трифонов Григорий Алексеевич.pdf"
-              class="btn btn-light btn-lg"
+              class="btn btn-primary"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i class="bi bi-download me-2"></i>Скачать резюме
+              📥 Скачать резюме
             </a>
           </div>
         </div>
@@ -48,145 +39,128 @@ icons@1.11.1/font/bootstrap-icons.css"
     </header>
 
     <!-- Navigation -->
-    <nav class="navbar navbar-dark bg-dark sticky-top">
+    <nav class="navbar">
       <div class="container">
-        <a class="navbar-brand fw-bold" href="#">
-          <i class="bi bi-code-slash me-2"></i>Трифонов Григорий
-        </a>
-
-        <ul class="navbar-nav flex-row ms-auto">
-          <li class="nav-item me-3">
-            <a class="nav-link active" href="index.html">
-              <i class="bi bi-house me-1"></i>Главная
-            </a>
-          </li>
-          <li class="nav-item me-3">
-            <a class="nav-link" href="pages/projects.html">
-              <i class="bi bi-folder me-1"></i>Мои работы
-            </a>
-          </li>
-          <li class="nav-item me-3">
-            <a class="nav-link" href="pages/diary.html">
-              <i class="bi bi-journal me-1"></i>Дневник
-            </a>
+        <div class="nav-brand">
+          <span>💻 Трифонов Григорий</span>
+        </div>
+        <button class="nav-toggle" id="navToggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-menu" id="navMenu">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">🏠 Главная</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="pages/contacts.html">
-              <i class="bi bi-telephone me-1"></i>Контакты
-            </a>
+            <a class="nav-link" href="pages/projects.html">📁 Мои работы</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pages/diary.html">📓 Дневник</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pages/contacts.html">📞 Контакты</a>
           </li>
         </ul>
       </div>
     </nav>
 
     <!-- Main Content -->
-    <main class="container my-5">
+    <main class="container">
       <!-- Skills Section -->
-      <section class="mb-5">
-        <div class="card shadow-sm">
-          <div class="card-header bg-light">
-            <h3 class="card-title h4 mb-0">
-              <i class="bi bi-tools text-primary me-2"></i>Мои навыки
-            </h3>
+      <section class="section">
+        <div class="card">
+          <div class="card-header">
+            <h2>🛠️ Мои навыки</h2>
           </div>
           <div class="card-body">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="mb-4">
-                  <div class="d-flex justify-content-between mb-2">
-                    <span class="fw-semibold">C++</span>
-                    <span class="text-primary">50%</span>
+            <div class="skills-grid">
+              <div class="skills-column">
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">C++</span>
+                    <span class="skill-percent">50%</span>
                   </div>
-                  <div class="progress skill-progress">
-                    <div
-                      class="progress-bar bg-primary"
-                      style="width: 50%"
-                    ></div>
+                  <div class="progress-bar">
+                    <div class="progress-fill" style="width: 50%"></div>
                   </div>
                 </div>
-                <div class="mb-4">
-                  <div class="d-flex justify-content-between mb-2">
-                    <span class="fw-semibold">Python</span>
-                    <span class="text-primary">30%</span>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">Python</span>
+                    <span class="skill-percent">30%</span>
                   </div>
-                  <div class="progress skill-progress">
+                  <div class="progress-bar">
                     <div
-                      class="progress-bar bg-success"
+                      class="progress-fill bg-success"
                       style="width: 30%"
                     ></div>
                   </div>
                 </div>
-                <div class="mb-4">
-                  <div class="d-flex justify-content-between mb-2">
-                    <span class="fw-semibold">C#</span>
-                    <span class="text-primary">30%</span>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">C#</span>
+                    <span class="skill-percent">30%</span>
                   </div>
-                  <div class="progress skill-progress">
+                  <div class="progress-bar">
                     <div
-                      class="progress-bar bg-success"
+                      class="progress-fill bg-success"
                       style="width: 30%"
                     ></div>
                   </div>
                 </div>
-                <div class="mb-4">
-                  <div class="d-flex justify-content-between mb-2">
-                    <span class="fw-semibold"
-                      >Алгоритмы и структуры данных</span
-                    >
-                    <span class="text-primary">50%</span>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">Алгоритмы и структуры данных</span>
+                    <span class="skill-percent">50%</span>
                   </div>
-                  <div class="progress skill-progress">
-                    <div
-                      class="progress-bar bg-primary"
-                      style="width: 50%"
-                    ></div>
+                  <div class="progress-bar">
+                    <div class="progress-fill" style="width: 50%"></div>
                   </div>
                 </div>
               </div>
-              <div class="col-md-6">
-                <div class="mb-4">
-                  <div class="d-flex justify-content-between mb-2">
-                    <span class="fw-semibold">Frontend</span>
-                    <span class="text-primary">20%</span>
+              <div class="skills-column">
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">Frontend</span>
+                    <span class="skill-percent">20%</span>
                   </div>
-                  <div class="progress skill-progress">
-                    <div class="progress-bar bg-info" style="width: 20%"></div>
+                  <div class="progress-bar">
+                    <div class="progress-fill bg-info" style="width: 20%"></div>
                   </div>
                 </div>
-                <div class="mb-4">
-                  <div class="d-flex justify-content-between mb-2">
-                    <span class="fw-semibold">Backend</span>
-                    <span class="text-primary">0%</span>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">Backend</span>
+                    <span class="skill-percent">0%</span>
                   </div>
-                  <div class="progress skill-progress">
+                  <div class="progress-bar">
                     <div
-                      class="progress-bar bg-success"
+                      class="progress-fill bg-success"
                       style="width: 0%"
                     ></div>
                   </div>
                 </div>
-                <div class="mb-4">
-                  <div class="d-flex justify-content-between mb-2">
-                    <span class="fw-semibold">Javascript</span>
-                    <span class="text-primary">20%</span>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">Javascript</span>
+                    <span class="skill-percent">20%</span>
                   </div>
-                  <div class="progress skill-progress">
+                  <div class="progress-bar">
                     <div
-                      class="progress-bar bg-warning"
+                      class="progress-fill bg-warning"
                       style="width: 20%"
                     ></div>
                   </div>
                 </div>
-                <div class="mb-4">
-                  <div class="d-flex justify-content-between mb-2">
-                    <span class="fw-semibold">ООП</span>
-                    <span class="text-primary">50%</span>
+                <div class="skill-item">
+                  <div class="skill-info">
+                    <span class="skill-name">ООП</span>
+                    <span class="skill-percent">50%</span>
                   </div>
-                  <div class="progress skill-progress">
-                    <div
-                      class="progress-bar bg-primary"
-                      style="width: 50%"
-                    ></div>
+                  <div class="progress-bar">
+                    <div class="progress-fill" style="width: 50%"></div>
                   </div>
                 </div>
               </div>
@@ -196,126 +170,98 @@ icons@1.11.1/font/bootstrap-icons.css"
       </section>
 
       <!-- Projects Section -->
-      <section class="mb-5">
-        <div class="card shadow-sm">
-          <div class="card-header bg-light">
-            <h3 class="card-title h4 mb-0">
-              <i class="bi bi-star-fill text-warning me-2"></i>Мои достижения и
-              работы
-            </h3>
+      <section class="section">
+        <div class="card">
+          <div class="card-header">
+            <h2>⭐ Мои достижения и работы</h2>
           </div>
           <div class="card-body">
-            <div class="row g-4">
-              <div class="col-md-4">
-                <div class="card project-card h-100">
-                  <div class="image-wrapper">
-                    <img
-                      src="images/сбк.png"
-                      class="card-img-top uniform-image; object-fit: cover;"
-                      alt="Личный сайт"
-                    />
-                  </div>
-                  <div class="card-body">
-                    <h5 class="card-title">
-                      <a
-                        href="https://github.com/ldskpr3st1g3/Portfolio"
-                        target="_blank"
-                        >Личный сайт</a
-                      >
-                    </h5>
-                    <p class="card-text text-muted">
-                      Современный адаптивный сайт-портфолио с использованием
-                      HTML5 и CSS3
-                    </p>
-                    <div class="mb-2">
-                      <span class="badge bg-primary">HTML</span>
-                      <span class="badge bg-primary">CSS</span>
-                      <span class="badge bg-primary">JavaScript</span>
-                    </div>
+            <div class="projects-grid">
+              <div class="project-card">
+                <div class="project-image">
+                  <img src="images/сбк.png" alt="Личный сайт" />
+                </div>
+                <div class="project-content">
+                  <h3>
+                    <a
+                      href="https://github.com/ldskpr3st1g3/Portfolio"
+                      target="_blank"
+                    >
+                      Личный сайт
+                    </a>
+                  </h3>
+                  <p>
+                    Современный адаптивный сайт-портфолио с использованием HTML5
+                    и CSS3
+                  </p>
+                  <div class="project-tags">
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">JavaScript</span>
                   </div>
                 </div>
               </div>
-              <div class="col-md-4">
-                <div class="card project-card h-100">
-                  <div class="image-wrapper">
-                    <img
-                      src="images/Я.jpg"
-                      class="card-img-top uniform-image; object-fit: cover;"
-                      alt="LeetCode"
-                    />
-                  </div>
-                  <div class="card-body">
-                    <h5 class="card-title">
-                      <a href="https://leetcode.com/u/LDSK_Weltschmerz/"
-                        >Аккаунт LeetCode</a
-                      >
-                    </h5>
-                    <p class="card-text text-muted">
-                      Сайт для решения алгоритмических задач
-                    </p>
-                    <div class="mb-2">
-                      <span class="badge bg-success">C++</span>
-                      <span class="badge bg-success">Python</span>
-                      <span class="badge bg-success">C#</span>
-                    </div>
+              <div class="project-card">
+                <div class="project-image">
+                  <img src="images/Я.jpg" alt="LeetCode" />
+                </div>
+                <div class="project-content">
+                  <h3>
+                    <a href="https://leetcode.com/u/LDSK_Weltschmerz/">
+                      Аккаунт LeetCode
+                    </a>
+                  </h3>
+                  <p>Сайт для решения алгоритмических задач</p>
+                  <div class="project-tags">
+                    <span class="tag tag-success">C++</span>
+                    <span class="tag tag-success">Python</span>
+                    <span class="tag tag-success">C#</span>
                   </div>
                 </div>
               </div>
-              <div class="col-md-4">
-                <div class="card project-card h-100">
-                  <div class="image-wrapper">
-                    <img
-                      src="images/собаааака.PNG"
-                      class="card-img-top uniform-image; object-fit: cover;"
-                      alt="CodeForces"
-                    />
-                  </div>
-                  <div class="card-body">
-                    <h5 class="card-title">
-                      <a href="https://codeforces.com/profile/LDSK_K4RM4"
-                        >CodeForces</a
-                      >
-                    </h5>
-                    <p class="card-text text-muted">
-                      Сайт для решения алгоритмических задач
-                    </p>
-                    <div class="mb-2">
-                      <span class="badge bg-info">С++</span>
-                      <span class="badge bg-info">Python</span>
-                      <span class="badge bg-info">C#</span>
-                    </div>
+              <div class="project-card">
+                <div class="project-image">
+                  <img src="images/собаааака.PNG" alt="CodeForces" />
+                </div>
+                <div class="project-content">
+                  <h3>
+                    <a href="https://codeforces.com/profile/LDSK_K4RM4">
+                      CodeForces
+                    </a>
+                  </h3>
+                  <p>Сайт для решения алгоритмических задач</p>
+                  <div class="project-tags">
+                    <span class="tag tag-info">С++</span>
+                    <span class="tag tag-info">Python</span>
+                    <span class="tag tag-info">C#</span>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="text-center mt-4">
-              <a href="pages/projects.html" class="btn btn-outline-primary">
-                <i class="bi bi-arrow-right me-2"></i>Больше информации
+            <div class="text-center">
+              <a href="pages/projects.html" class="btn btn-outline">
+                ➡️ Больше информации
               </a>
             </div>
           </div>
         </div>
       </section>
     </main>
+
     <!-- Footer -->
-    <footer class="bg-dark text-white py-4">
+    <footer class="footer">
       <div class="container">
-        <div class="row align-items-center">
-          <div class="col-md-6">
-            <p class="mb-0">&copy; 2025 Портфолио Трифонова Григория.</p>
-            <p class="mb-0">Все права защищены.</p>
+        <div class="footer-content">
+          <div class="footer-text">
+            <p>&copy; 2025 Портфолио Трифонова Григория.</p>
+            <p>Все права защищены.</p>
           </div>
-          <div class="col-md-6 text-md-end">
-            <a
-              href="pages/contacts.html"
-              class="text-white text-decoration-none"
-            >
-              <i class="bi bi-envelope me-1"></i>Контакты
-            </a>
+          <div class="footer-links">
+            <a href="pages/contacts.html">📧 Контакты</a>
           </div>
         </div>
       </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
