@@ -719,25 +719,7 @@ body {
 
 /* Альтернативный метод для мобильных изображений */
 @media (max-width: 768px) {
-  .project-image {
-    position: relative;
-  }
-
   .project-image::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url("../images/kit.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    z-index: 2;
-  }
-
-  .project-image img {
-    opacity: 0.3;
+    background-image: url("images/kit.png");
   }
 }

@@ -9,8 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (!img.dataset.originalSrc) {
           img.dataset.originalSrc = img.src;
         }
-        // Заменяем на кита
-        img.src = "../images/kit.png";
+        img.src = "images/kit.png";
       });
     } else {
       // Восстанавливаем оригинальные изображения на десктопе
