@@ -784,17 +784,7 @@ body {
   }
 }
 
-/* Удаляем старый метод с content */
-@media (max-width: 768px) {
-  .project-image img {
-    opacity: 0; /* Удаляем эту строку */
-  }
-  .project-image::after {
-    opacity: 1; /* Удаляем эту строку */
-  }
-}
-
-/* Добавляем новый метод для мобильных изображений */
+/* Альтернативный метод для мобильных изображений */
 @media (max-width: 768px) {
   .project-image {
     position: relative;
@@ -807,13 +797,14 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url("images/кит.png");
+    background-image: url("images/kit.png");
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     z-index: 2;
   }
 
   .project-image img {
-    opacity: 0.3; /* Делаем оригинальное изображение полупрозрачным */
+    opacity: 0.3;
   }
 }
